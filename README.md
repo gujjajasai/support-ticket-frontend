@@ -33,8 +33,8 @@ This application was built as a comprehensive portfolio project to showcase skil
 This frontend is one of three services that make up the complete application:
 
 1.  **Frontend (This Repository):** The user interface built with Next.js.
-2.  **[Core Backend (Java)](https://support-ticket-backend-jyb6.onrender.com):** A robust Java/Servlet backend that manages users, tickets, and the database.
-3.  **[AI Agent (Node.js)](https://ai-agent-service-ivap.onrender.com):** A specialized microservice that handles all Generative AI processing. 
+2.  **[Core Backend (Java)](https://github.com/gujjajasai/support-ticket-backend):** A robust Java/Servlet backend that manages users, tickets, and the database.
+3.  **[AI Agent (Node.js)](https://github.com/gujjajasai/ai-agent-service):** A specialized microservice that handles all Generative AI processing. 
 
 ---
 
