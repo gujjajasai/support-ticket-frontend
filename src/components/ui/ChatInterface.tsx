@@ -33,7 +33,7 @@ export function ChatInterface() {
         try {
             const historyForApi = newMessages.filter(msg => msg.content !== 'Hello! I am your AI Support Assistant. How can I help you today?');
             
-            const response = await fetch('http://localhost:3001/api/ai/chat', {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_AI_AGENT_URL}/api/ai/chat`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ history: historyForApi.slice(0, -1), message: input })

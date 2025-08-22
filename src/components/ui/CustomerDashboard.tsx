@@ -12,7 +12,7 @@ export function CustomerDashboard({ user }: { user: User }) {
         const fetchTickets = async () => {
             setLoading(true);
             try {
-                const response = await fetch(`http://localhost:8088/api/tickets?customerId=${user.userId}`);
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/tickets`);
                 if (!response.ok) throw new Error("Failed to fetch tickets");
                 const data = await response.json();
                 setTickets(data);

@@ -18,7 +18,7 @@ export function AgentDashboard({ user }: { user: User }) {
             setLoading(true);
             setError(null);
             try {
-                const response = await fetch('http://localhost:8088/api/tickets');
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/tickets`);
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const data = await response.json();
                 setTickets(data);
